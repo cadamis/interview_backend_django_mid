@@ -7,7 +7,8 @@ python3 -m venv "$VENV_DIR"
 source "$VENV_DIR/bin/activate"
 
 echo "Installing requirements..."
-pip install --upgrade pip
+python3 -m ensurepip --upgrade
+pip3 install --upgrade pip
 pip install -r requirements.txt
 
 echo "Migrating..."
